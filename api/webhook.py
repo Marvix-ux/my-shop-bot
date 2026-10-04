@@ -62,3 +62,5 @@ async def handler(request: Request):
         return JSONResponse({"ok": True})
     except Exception as e:
         return JSONResponse({"ok": False, "error": str(e)})
+
+app = handler
